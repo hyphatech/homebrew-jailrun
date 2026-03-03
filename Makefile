@@ -61,7 +61,7 @@ brew-retap: ## tap from local repo (file://...), then show the formula header br
 	@echo "$(BOLD)==> brew sees (top of formula)$(RESET)"
 	@brew cat $(FULL) | sed -n '1,40p'
 
-brew-reinstall: ## nuke everything, retap locally, install from source (verbose), then test
+brew-install: ## nuke everything, retap locally, install from source (verbose), then test
 	@$(MAKE) brew-nuke
 	@$(MAKE) brew-retap
 	@echo "$(BOLD)==> install from source$(RESET)"
@@ -74,7 +74,3 @@ brew-debug: ## print where brew loads formula from + deps + first lines
 	@brew formula $(FULL) || true
 	@echo "$(BOLD)==> tap dir exists?$(RESET)"
 	@test -d $(TAP_DIR) && echo "YES: $(TAP_DIR)" || echo "NO: $(TAP_DIR)"
-	@echo "$(BOLD)==> first 30 lines brew sees$(RESET)"
-	@brew cat $(FULL) | sed -n '1,30p' || true
-	@echo "$(BOLD)==> deps$(RESET)"
-	@brew deps $(FULL) || true

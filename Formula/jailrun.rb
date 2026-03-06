@@ -3,8 +3,8 @@ class Jailrun < Formula
 
   desc "Run fully isolated environments on your machine, powered by FreeBSD"
   homepage "https://github.com/hyphatech/jailrun"
-  url "https://pypi.org/packages/source/j/jailrun/jailrun-0.3.0.tar.gz"
-  sha256 "703a2b9c3f5e9a02fe92c0e4dff6b9d2d01d091ea1dbcdf5786d6be3b835f0ee"
+  url "https://pypi.org/packages/source/j/jailrun/jailrun-0.4.0.tar.gz"
+  sha256 "e5f8e98e6fe7f05e4043d486f5cd7d7324e267af7fac5ee013c54eb5f7023195"
   license "BSD-3-Clause"
 
   depends_on "python@3.14"

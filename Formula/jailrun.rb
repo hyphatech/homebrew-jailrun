@@ -3,8 +3,8 @@ class Jailrun < Formula
 
   desc "Cross-platform orchestration for FreeBSD jails"
   homepage "https://github.com/hyphatech/jailrun"
-  url "https://pypi.org/packages/source/j/jailrun/jailrun-0.8.0.tar.gz"
-  sha256 "29b02c2b0911f1d6ae4a0575970f03ec42a03a329fa7ef1ee4b1e52c975c4f13"
+  url "https://pypi.org/packages/source/j/jailrun/jailrun-0.9.0.tar.gz"
+  sha256 "a832da82f21f92c7bc1b92efc1ff8a4c0df8c807bd0189741c01a92cb01bb22c"
   license "BSD-3-Clause"
 
   depends_on "python"
